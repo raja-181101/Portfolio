@@ -108,10 +108,6 @@ export default function Contact() {
             <Reveal delay={0.2}>
               <div className="contact__socials">
                 <SocialRow />
-                <a className="btn btn--ghost contact__linkedin" href={socials.linkedin.url} target="_blank" rel="noreferrer">
-                  LinkedIn
-                  <ArrowUpRight size={14} aria-hidden="true" />
-                </a>
               </div>
             </Reveal>
           </div>

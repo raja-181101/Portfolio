@@ -11,11 +11,11 @@ export default function Experience() {
         <SectionHeading
           index="02"
           eyebrow="Professional Experience"
-          title={<>Real industry experience in <span className="gradient-text">quality & data integrity</span></>}
+          title={<>Professional experience built on <span className="gradient-text">quality & engineering discipline</span></>}
           description={
             <>
-              Southern-based QA role at a leading solar energy manufacturer, working directly with
-              MES production data, defect analysis and cross-functional teams.
+              Professional QA experience at a solar energy manufacturer, working
+              directly with MES production data, defect analysis and cross-functional teams.
             </>
           }
         />

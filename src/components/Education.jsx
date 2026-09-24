@@ -37,9 +37,9 @@ export default function Education() {
 
           <Reveal delay={0.12} y={24}>
             <p className="education__note">
-              Engineering studies in electronics built a strong systems mindset — signals,
-              embedded logic and hardware–software boundaries — which now complements JVM and
-              full-stack engineering work.
+              B.Tech in Electronics and Communication Engineering, providing
+              a foundation in engineering problem-solving, systems thinking and
+              technical analysis.
             </p>
           </Reveal>
         </div>

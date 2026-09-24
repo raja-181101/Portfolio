@@ -47,28 +47,26 @@ export default function About() {
           <div className="about__text">
             <Reveal delay={0.05}>
               <p className="about__lead">
-                Java backend developer building RESTful applications with Spring Boot, Spring
-                Security, JPA/Hibernate, PostgreSQL and Kafka — with 1 year 9 months of
-                professional Quality Assurance experience at Premier Energies.
+                Java backend developer building RESTful applications with Spring Boot,
+                Spring Security, JPA/Hibernate, PostgreSQL and Kafka, complemented by 1 year 9 months
+                of professional Quality Assurance experience at Premier Energies.
               </p>
             </Reveal>
             <Reveal delay={0.1}>
               <p>
-                My engineering path combines hands-on backend development with real industry
-                experience in data validation, defect analysis and root-cause investigation. At
-                Premier Energies I worked inside a Manufacturing Execution System (MES)
-                environment — validating production data, documenting mismatches and driving
-                discrepancies to resolution with cross-functional teams.
+                My work spans secure REST APIs, event-driven backend systems, Android
+                applications and test automation. My QA background brings a strong focus
+                on validation, root-cause analysis and reliable software delivery.
               </p>
             </Reveal>
-            <Reveal delay={0.15}>
-              <p>
-                That discipline now shows up in how I build software: JWT-secured REST servers,
-                validated request flows, event-driven messaging and testable, layered
-                architecture. Alongside Spring Boot work, I build Android applications with
-                Firebase and maintain Selenium/TestNG automation frameworks.
-              </p>
-            </Reveal>
+            {/*<Reveal delay={0.15}>*/}
+            {/*  <p>*/}
+            {/*    That discipline now shows up in how I build software: JWT-secured REST servers,*/}
+            {/*    validated request flows, event-driven messaging and testable, layered*/}
+            {/*    architecture. Alongside Spring Boot work, I build Android applications with*/}
+            {/*    Firebase and maintain Selenium/TestNG automation frameworks.*/}
+            {/*  </p>*/}
+            {/*</Reveal>*/}
 
             <Reveal delay={0.2}>
               <ul className="about__facts">

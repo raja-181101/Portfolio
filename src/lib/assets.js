@@ -18,7 +18,7 @@ export const certificateAssets = import.meta.glob(
   { eager: true, query: '?url', import: 'default' }
 );
 
-export const resumeAssets = import.meta.glob('../assets/resume/*.{pdf}', {
+export const resumeAssets = import.meta.glob('../assets/resume/*.pdf', {
   eager: true,
   query: '?url',
   import: 'default',

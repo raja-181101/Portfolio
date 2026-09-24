@@ -7,7 +7,7 @@ export const site = {
   email: 'rajapandu.m@gmail.com',
   heroIntro: "Hello, I'm",
   heroDescription:
-    "I build secure backend applications and REST APIs with Java and Spring Boot, backed by professional QA experience and hands-on automation and mobile development projects.",
+    "I build secure backend applications and REST APIs with Java and Spring Boot, combining hands-on software development with professional quality engineering experience.",
   roles: [
     'Java Developer',
     'Java Backend Developer',

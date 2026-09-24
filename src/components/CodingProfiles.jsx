@@ -47,8 +47,8 @@ export default function CodingProfiles() {
       <div className="container">
         <SectionHeading
           index="09"
-          eyebrow="Coding & Developer Profiles"
-          title={<>Find me across the <span className="gradient-text">developer ecosystem</span></>}
+          eyebrow="Developer Profiles"
+          title={<>Connect & <span className="gradient-text">explore my work</span></>}
           description="Professional and competitive programming profiles — no stats fabricated, just the work."
         />
 

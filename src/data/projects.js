@@ -6,7 +6,7 @@ export const projects = [
     shortName: 'E-Commerce Backend',
     tagline: 'Secure Spring Boot commerce API with event-driven messaging.',
     description:
-      'A production-structured e-commerce backend built with Spring Boot. Implements product, order and user-management workflows behind JWT-secured REST APIs, with JPA/Hibernate persistence and Kafka-powered event communication.',
+      'A Spring Boot e-commerce backend implementing product, order and user-management workflows through JWT-secured REST APIs, PostgreSQL persistence and Kafka-based event communication.',
     tech: [
       'Java',
       'Spring Boot',

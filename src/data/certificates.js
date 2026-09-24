@@ -11,6 +11,7 @@ export const certificates = [
   {
     id: 'java-hackerrank',
     file: 'java-hackerrank.pdf',
+    thumbnail: 'javaBasicCertificate.png',
     title: 'Java (Basic)',
     issuer: 'HackerRank',
     year: '2024',

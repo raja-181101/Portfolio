@@ -40,28 +40,41 @@ function CertGrid({ onPick }) {
 
 function CertPreview({ cert, url }) {
   const [failed, setFailed] = useState(false);
+  const previewUrl = cert.thumbnail ? certificateUrl(cert.thumbnail) : url;
 
-  if (cert.kind === 'pdf') {
+  if (cert.kind === 'pdf' && !cert.thumbnail) {
     return (
-      <span className="cert-preview cert-preview--doc" aria-hidden="true">
+        <span
+            className="cert-preview cert-preview--doc"
+            aria-hidden="true"
+        >
         <FileText size={34} />
         <span className="cert-preview__badge">PDF</span>
       </span>
     );
   }
 
-  if (!url || failed) {
+  if (!previewUrl || failed) {
     return (
-      <span className="cert-preview cert-preview--doc" aria-hidden="true">
-        <Award size={34} />
-        <span className="cert-preview__badge">IMG</span>
+        <span
+            className="cert-preview cert-preview--doc"
+            aria-hidden="true"
+        >
+        {cert.kind === 'pdf'
+            ? <FileText size={34} />
+            : <Award size={34} />
+        }
+
+          <span className="cert-preview__badge">
+          {cert.kind === 'pdf' ? 'PDF' : 'IMG'}
+        </span>
       </span>
     );
   }
 
   return (
     <img
-      src={url}
+      src={previewUrl}
       alt=""
       loading="lazy"
       onError={() => setFailed(true)}
@@ -83,8 +96,8 @@ export default function Certifications() {
         <SectionHeading
           index="06"
           eyebrow="Certifications"
-          title={<>Verified by <span className="gradient-text">recognized programs</span></>}
-          description="Testing, Java, AI-ML, Android and cybersecurity credentials — click any card to view the certificate."
+          title={<>Certifications <span className="gradient-text">& Training</span></>}
+          description="Credentials across Java, software testing, AI/ML, Android development and cybersecurity."
         />
         <CertGrid onPick={setOpen} />
       </div>
@@ -170,23 +183,25 @@ function CertModal({ index, onClose, onPrev, onNext }) {
         </div>
 
         <div className="cert-modal__preview">
-          {cert.kind === 'pdf' ? (
-            <div className="cert-modal__doc">
-              <FileText size={54} />
-              <span>PDF certificate</span>
-            </div>
+          {cert.kind === 'pdf' && url ? (
+              <iframe
+                  src={`${url}#toolbar=0&navpanes=0&scrollbar=0`}
+                  title={`${cert.title} certificate`}
+                  className="cert-modal__pdf"
+              />
           ) : showImage ? (
-            <img
-              src={url}
-              alt={`${cert.title} certificate from ${cert.issuer}`}
-              onError={() => setFailed(true)}
-            />
+              <img
+                  src={url}
+                  alt={`${cert.title} certificate from ${cert.issuer}`}
+                  onError={() => setFailed(true)}
+              />
           ) : (
-            <div className="cert-modal__doc">
-              <Award size={54} />
-              <span>Certificate image appears here once the file is added</span>
-            </div>
+              <div className="cert-modal__doc">
+                <Award size={54} />
+                <span>Certificate preview unavailable</span>
+              </div>
           )}
+
         </div>
 
         <div className="cert-modal__info">

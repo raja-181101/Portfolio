@@ -52,22 +52,22 @@ export default function GitHubCTA() {
               all open source — open issues, architecture and commit history included.
             </p>
 
-            <div className="github-cta__stat" aria-live="polite">
-              {state === 'ok' && stats ? (
-                <span className="github-cta__stat-text mono">
-                  {stats.repos} public repositories
-                </span>
-              ) : state === 'loading' ? (
-                <span className="github-cta__stat-text mono github-cta__stat-text--loading">
-                  <RefreshCw size={13} className="github-cta__spin" aria-hidden="true" />
-                  fetching live data…
-                </span>
-              ) : (
-                <span className="github-cta__stat-text mono github-cta__stat-text--muted">
-                  live GitHub stats unavailable right now
-                </span>
-              )}
-            </div>
+            {/*<div className="github-cta__stat" aria-live="polite">*/}
+            {/*  {state === 'ok' && stats ? (*/}
+            {/*    <span className="github-cta__stat-text mono">*/}
+            {/*      {stats.repos} public repositories*/}
+            {/*    </span>*/}
+            {/*  ) : state === 'loading' ? (*/}
+            {/*    <span className="github-cta__stat-text mono github-cta__stat-text--loading">*/}
+            {/*      <RefreshCw size={13} className="github-cta__spin" aria-hidden="true" />*/}
+            {/*      fetching live data…*/}
+            {/*    </span>*/}
+            {/*  ) : (*/}
+            {/*    <span className="github-cta__stat-text mono github-cta__stat-text--muted">*/}
+            {/*      live GitHub stats unavailable right now*/}
+            {/*    </span>*/}
+            {/*  )}*/}
+            {/*</div>*/}
 
             <a
               className="btn btn--primary github-cta__btn"

@@ -13,7 +13,6 @@ const NAV_ITEMS = [
   { id: 'projects', label: 'Projects' },
   { id: 'certifications', label: 'Certificates' },
   { id: 'education', label: 'Education' },
-  { id: 'publication', label: 'Publication' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -83,13 +82,7 @@ export default function Navbar() {
             className="btn btn--ghost nav__resume"
             href={resume || '#contact'}
             onClick={resume ? undefined : goto('contact')}
-            {...(resume
-              ? {
-                  download: resume.endsWith('.pdf') ? 'Rajapandu-M-Resume.pdf' : undefined,
-                  target: '_blank',
-                  rel: 'noreferrer',
-                }
-              : {})}
+            download={resume ? 'Rajapandu-M-Resume.pdf' : undefined}
             aria-label="Download resume"
           >
             <Download size={16} aria-hidden="true" />

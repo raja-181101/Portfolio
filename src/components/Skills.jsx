@@ -11,8 +11,9 @@ export default function Skills() {
         <SectionHeading
           index="03"
           eyebrow="Technical Skills"
-          title={<>The stack I build <span className="gradient-text">with every day</span></>}
-          description="Organized by discipline — from core JVM languages up to architectures, databases, test automation and tooling."
+          title={<>My engineering <span className="gradient-text">toolkit</span></>}
+          description="Backend development, databases, test automation,
+          mobile development and engineering tools used across my projects and professional work."
         />
 
         <div className="skills__grid">
