@@ -1,0 +1,93 @@
+.github-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.github-cta__panel {
+  position: relative;
+  text-align: center;
+  max-width: 720px;
+  margin-inline: auto;
+  padding: clamp(36px, 6vw, 64px) clamp(24px, 5vw, 64px);
+  overflow: hidden;
+}
+
+.github-cta__orb {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.14), transparent 70%);
+  pointer-events: none;
+}
+
+.github-cta__icon {
+  color: var(--accent);
+  margin-inline: auto;
+}
+
+.github-cta__handle {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: var(--text-3);
+}
+
+.github-cta__panel h3 {
+  margin-top: 10px;
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+}
+
+.github-cta__text {
+  margin-top: 12px;
+  color: var(--text-2);
+  max-width: 46ch;
+  margin-inline: auto;
+  font-size: 0.96rem;
+}
+
+.github-cta__stat {
+  margin-top: 18px;
+  min-height: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.github-cta__stat-text {
+  font-size: 0.78rem;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 6px 14px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.github-cta__stat-text--muted {
+  color: var(--text-3);
+  background: rgba(255, 255, 255, 0.03);
+  border-color: var(--border-soft);
+}
+
+.github-cta__spin {
+  animation: github-spin 1.1s linear infinite;
+}
+
+@keyframes github-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.github-cta__btn {
+  margin-top: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .github-cta__spin {
+    animation: none;
+  }
+}

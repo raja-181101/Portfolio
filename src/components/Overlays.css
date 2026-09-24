@@ -1,0 +1,49 @@
+/* Thin fixed reading-progress line under the top edge */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  z-index: 1200;
+  transform-origin: 0% 50%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2) 45%, var(--accent-blue));
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.55);
+}
+
+/* Floating back-to-top */
+.back-to-top {
+  position: fixed;
+  right: clamp(16px, 3vw, 32px);
+  bottom: clamp(16px, 3vw, 32px);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  background: rgba(16, 23, 34, 0.9);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  z-index: 900;
+  opacity: 0;
+  transform: translateY(14px) scale(0.94);
+  pointer-events: none;
+  transition:
+    opacity 0.3s var(--ease),
+    transform 0.3s var(--ease),
+    border-color 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+
+.back-to-top--show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 12px 32px -16px rgba(56, 189, 248, 0.6);
+  transform: translateY(-3px);
+}

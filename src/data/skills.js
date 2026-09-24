@@ -1,0 +1,87 @@
+export const skillCategories = [
+  {
+    id: 'languages',
+    title: 'Languages',
+    blurb: 'Core languages used for daily backend engineering.',
+    items: [
+      { name: 'Java', icon: 'java' },
+      { name: 'SQL', icon: 'sql' },
+    ],
+  },
+  {
+    id: 'backend',
+    title: 'Backend & Frameworks',
+    blurb: 'Spring ecosystem for RESTful services and business logic.',
+    items: [
+      { name: 'Spring Boot', icon: 'springboot' },
+      { name: 'Spring MVC', icon: 'spring' },
+      { name: 'Spring Security', icon: 'springsecurity' },
+      { name: 'Spring Data JPA', icon: 'springjpa' },
+      { name: 'Hibernate', icon: 'hibernate' },
+      { name: 'REST APIs', icon: 'rest' },
+    ],
+  },
+  {
+    id: 'architecture',
+    title: 'Architecture & Messaging',
+    blurb: 'Designing decoupled, event-driven systems.',
+    items: [
+      { name: 'Microservices', icon: 'microservices' },
+      { name: 'Event-Driven Systems', icon: 'events' },
+      { name: 'Apache Kafka', icon: 'kafka' },
+      { name: 'Layered Architecture', icon: 'layers' },
+    ],
+  },
+  {
+    id: 'database',
+    title: 'Databases',
+    blurb: 'SQL and realtime NoSQL persistence.',
+    items: [
+      { name: 'PostgreSQL', icon: 'postgres' },
+      { name: 'Firebase Realtime Database', icon: 'firebase' },
+    ],
+  },
+  {
+    id: 'testing',
+    title: 'Testing & Automation',
+    blurb: 'Manual quality engineering plus automated test suites.',
+    items: [
+      { name: 'Selenium WebDriver', icon: 'selenium' },
+      { name: 'Playwright', icon: 'playwright' },
+      { name: 'Appium', icon: 'appium' },
+      { name: 'TestNG', icon: 'testng' },
+      { name: 'Postman', icon: 'postman' },
+      { name: 'API Testing', icon: 'api' },
+      { name: 'Functional Testing', icon: 'functional' },
+      { name: 'Regression Testing', icon: 'regression' },
+      { name: 'Smoke Testing', icon: 'smoke' },
+    ],
+  },
+  {
+    id: 'frontend',
+    title: 'Frontend & Mobile',
+    blurb: 'Building interfaces and Android apps where needed.',
+    items: [
+      { name: 'React.js', icon: 'react' },
+      { name: 'HTML', icon: 'html' },
+      { name: 'CSS', icon: 'css' },
+      { name: 'Android (Java)', icon: 'android' },
+      { name: 'RecyclerView', icon: 'recyclerview' },
+      { name: 'Firebase Authentication', icon: 'firebase' },
+    ],
+  },
+  {
+    id: 'tools',
+    title: 'Tools & Build',
+    blurb: 'The tooling behind daily delivery and testing workflow.',
+    items: [
+      { name: 'Git', icon: 'git' },
+      { name: 'GitHub', icon: 'github' },
+      { name: 'Maven', icon: 'maven' },
+      { name: 'IntelliJ IDEA', icon: 'intellij' },
+      { name: 'Jira', icon: 'jira' },
+      { name: 'Apache POI', icon: 'apachepoi' },
+      { name: 'Allure', icon: 'allure' },
+    ],
+  },
+];

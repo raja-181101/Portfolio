@@ -1,0 +1,125 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.skills__card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 22px;
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.skills__card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.32);
+  box-shadow:
+    0 26px 60px -34px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(56, 189, 248, 0.06);
+}
+
+.skills__header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.skills__header h3 {
+  font-size: 1.06rem;
+}
+
+.skills__count {
+  font-size: 0.72rem;
+  color: var(--text-3);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.skills__header p {
+  margin-top: 6px;
+  font-size: 0.82rem;
+  color: var(--text-3);
+}
+
+.skills__list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-2);
+  padding: 7px 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: color 0.25s var(--ease), border-color 0.25s var(--ease), background 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.skills__item:hover {
+  color: var(--text);
+  background: rgba(56, 189, 248, 0.05);
+  border-color: rgba(56, 189, 248, 0.18);
+  transform: translateX(3px);
+}
+
+.skills__icon {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  color: var(--text-3);
+  transition: color 0.25s var(--ease);
+}
+
+.skills__item:hover .skills__icon {
+  color: var(--accent);
+}
+
+/* Monogram fallback tile for tools without a brand icon */
+.monogram {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+/* ============================================================
+   Responsive skill grid
+   ============================================================ */
+@media (max-width: 1080px) {
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}
